@@ -22,7 +22,7 @@ I developed custom Sysmon and Winlogbeat configurations to detect:
 2. **Persistence:** Tracking registry modifications in `Run` keys (Event ID 13)
 3. **Process Monitoring:** Tracking process creation and termination (Event ID 1 & 5)
 
-![Detection Rules](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Images/Rules_And_Connectors.png)
+![Detection Rules](Images/Rules_And_Connectors.png)
 
 ## 📊 Results
 The lab successfully captured real-time events. Below is a spike in traffic during a simulated DNS beaconing attack:
