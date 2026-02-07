@@ -14,7 +14,7 @@ To ensure stable communication between the Windows endpoint and the SIEM, a **Ho
 * **Elasticsearch IP:** `192.168.56.1`
 * **Connectivity Test:** Verified via `Test-NetConnection` on port 9200
 
-![Connectivity Test](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Ιmages/Nslookup.png)
+![Connectivity Test](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Images/Nslookup.png)
 
 ## 🛡️ Detection Capabilities
 I developed custom Sysmon and Winlogbeat configurations to detect:
@@ -22,13 +22,13 @@ I developed custom Sysmon and Winlogbeat configurations to detect:
 2. **Persistence:** Tracking registry modifications in `Run` keys (Event ID 13)
 3. **Process Monitoring:** Tracking process creation and termination (Event ID 1 & 5)
 
-![Detection Rules](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Ιmages/Rules_Αnd_Connectors.png)
+![Detection Rules](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Images/Rules_And_Connectors.png)
 
 ## 📊 Results
 The lab successfully captured real-time events. Below is a spike in traffic during a simulated DNS beaconing attack:
-![Log Ingestion Spike](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Ιmages/Elastic_Events.png)
+![Log Ingestion Spike](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Images/Elastic_Events.png)
 
 ### 📈 SOC Monitoring Dashboard
 Below is the overall visualization of the ingested telemetry, showing top processes and event distributions:
 
-![SOC Dashboard](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Ιmages/Elastic_Dashboard.png)
+![SOC Dashboard](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Images/Elastic_Dashboard.png)
