@@ -14,7 +14,7 @@ To ensure stable communication between the Windows endpoint and the SIEM, a **Ho
 * **Elasticsearch IP:** `192.168.56.1`
 * **Connectivity Test:** Verified via `Test-NetConnection` on port 9200
 
-![Connectivity Test](https://github.com/PanagiotisNitis/My-Soc-Lab/blob/main/Images/Nslookup.png)
+![Connectivity Test](Images/Nslookup.png)
 
 ## 🛡️ Detection Capabilities
 I developed custom Sysmon and Winlogbeat configurations to detect:
