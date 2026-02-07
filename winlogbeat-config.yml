@@ -1,0 +1,4 @@
+output.elasticsearch:
+  hosts: ["192.168.56.1:9200"] # Host-only IP for SIEM Connectivity
+  # username: "YOUR_USERNAME_HERE"
+  # password: "YOUR_PASSWORD_HERE"

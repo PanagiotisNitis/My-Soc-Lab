@@ -1,0 +1,27 @@
+#Registry
+
+<Sysmon schemaversion="4.90">
+  <EventFiltering>
+    <RuleGroup name="PersistenceDetection" groupRelation="or">
+      <RegistryEvent onmatch="include">
+        <TargetObject condition="contains">Windows\CurrentVersion\Run</TargetObject>
+      </RegistryEvent>
+      <FileCreate onmatch="include">
+        <TargetFilename condition="end with">.ps1</TargetFilename>
+      </FileCreate>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>
+
+
+
+#Network
+
+<Sysmon schemaversion="4.50">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <NetworkConnect onmatch="exclude">
+      </NetworkConnect>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>
